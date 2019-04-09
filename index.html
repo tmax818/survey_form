@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Survey Form</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Title</h1>
+    <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 
-  <script
-  src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
-/>
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <label for="email" id="email-label">Name</label>
+      <label for="number" id="number-label">Name</label>
+      <input type="text" id="name" placeholder="name" required >
+      <input type="email" id="email" placeholder="email" required>
+      <input type="number" id="number" placeholder="id" min="1" max="5">
 
-</body>
+      <select name="" id="dropdown">
+        <option value="this" id="dropdown">this</option>
+        <option value="this" id="dropdown">this</option>
+      </select>
+
+      <input type="radio" name="gender" value="male"> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other
+
+      <input type="checkbox" name="gender" value="female"> Female<br>
+      <input type="checkbox" name="gender" value="other"> Other
+
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <button id="submit"></button>
+    </form>
+
+      <script
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      />
+
+  </body>
 </html>
