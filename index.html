@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="stylesheet" href="style.css">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <title>Survey Form</title>
   </head>
   <body>
@@ -11,28 +14,54 @@
     <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 
-    <form action="" id="survey-form" data-netlify="true">
-      <label for="name" id="name-label">Name</label>
-      <label for="email" id="email-label">Name</label>
-      <label for="number" id="number-label">Name</label>
-      <input type="text" id="name" placeholder="name" required >
-      <input type="email" id="email" placeholder="email" required>
-      <input type="number" id="number" placeholder="id" min="1" max="5">
+    <form class="ui fluid form" action="" id="survey-form">
+      <div class="ui form">
+        <div class="field required">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" placeholder="name" required >
+          <label for="email" id="email-label">email</label>
+          <input type="email" id="email" placeholder="email" required>
+          <label for="number" id="number-label">age</label>
+          <input type="number" id="number" placeholder="age" min="18" max="99">
+      </div>
+      </div>
 
-      <select name="" id="dropdown">
-        <option value="this" id="dropdown">this</option>
-        <option value="this" id="dropdown">this</option>
-      </select>
+  <select class="ui dropdown" name="" id="dropdown">
+    <option value="this" id="dropdown">this</option>
+    <option value="this" id="dropdown">this</option>
+  </select>
 
-      <input type="radio" name="gender" value="male"> Male<br>
-      <input type="radio" name="gender" value="female"> Female<br>
-      <input type="radio" name="gender" value="other"> Other
 
-      <input type="checkbox" name="gender" value="female"> Female<br>
-      <input type="checkbox" name="gender" value="other"> Other
 
+  <div class="field">
+     <div class="ui radio checkbox">
+       <input type="radio" name="frequency" value="checked">
+       <label>Once a week</label>
+     </div>
+     <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="frequency" value="checked">
+        <label>Twice a week</label>
+      </div>
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="frequency" value="checked">
+        <label>Every Goddamned Day!!!</label>
+      </div>
+
+
+
+<div class="inline fields">
+  <div class="ui checkbox">
+    <div class="field">
+      <input type="checkbox" name="gender" value="female">Yes<br>
+      <input type="checkbox" name="gender" value="other">No
+    </div>
+</div>
+</div>
       <textarea name="" id="" cols="30" rows="10"></textarea>
-      <button id="submit"></button>
+      <hr>
+      <button class="ui button" id="submit">Submit</button>
     </form>
 
       <script
